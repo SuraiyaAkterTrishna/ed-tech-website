@@ -5,10 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ed Tech Website</title>
+    <title>Edu Master</title>
     <!-- daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                master: '#289bde',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body>
@@ -17,9 +28,43 @@
         header start 
         ------------------------------------------------------------------------------------------------------
     -->
-    <header>
-        <h1>Hello from Edtech</h1>
-        <button class="btn btn-primary">Button</button>
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Courses</a></li>
+                        <li><a>Deals</a></li>
+                        <li><a>Success</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Register</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl">Edu Master</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Courses</a></li>
+                    <li><a>Deals</a></li>
+                    <li><a>Success</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Register</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-outline btn-primary">Get started</a>
+            </div>
+        </div>
     </header>
     <main>
 
